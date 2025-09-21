@@ -2,6 +2,8 @@ package com.example.Curso_springboot.models;
 
 import jakarta.persistence.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "produtos")
 public class Produto {
@@ -9,6 +11,7 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String nome;
     private double preco;
 
